@@ -40,4 +40,4 @@ npm-debug.log*
 Thumbs.db
 
 README-template.md
-./assets/fonts/*
+assets/fonts/
