@@ -7,7 +7,7 @@
   --cobalt-blue: hsl(234, 85%, 45%);
   /* Gradients Colors*/
   /* background */
-  --light-slate-blue: hsl(252, 100%, 67%);
+  --light-slate-blue: hsl(252, 100%, 67%); /*colors/navy/200*/
   --light-royal-blue: hsl(241, 81%, 54%);
   /* circle */
   --violet-blue: hsla(256, 72%, 46%, 1);
@@ -17,6 +17,27 @@
   --pale-blue: hsl(221, 100%, 96%);
   --light-lavender: hsl(241, 100%, 89%);
   --dark-gray-blue: hsl(224, 30%, 27%);
+
+  /* Typography */
+  /* 
+        • Font size for paragraphs is 18px;
+        • Weights used are 500, 700, 800
+        • Font family Hanken Grotesk
+        • Note about color variations - use alpha channel to match the colors to the design
+            To do this using your CSS variables you can do this for example:
+            color: hsl(var(--dark-gray-blue) / 50%)
+    */
+  /* 
+        • Mobile  375px
+        • Tablet - portrait 768px
+        • Tablet - landscape 1024px
+        • Desktop 1440px
+    */
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -28,6 +49,84 @@ body {
   justify-content: center;
   align-items: center;
   font-family: "Hanken Grotesk", sans-serif;
+  font-size: 1.125rem;
+  background-color: var(--white);
+}
+
+main {
+  padding: 284px 352px;
+}
+
+article.results-container {
+  /* max-width: 736px;
+  max-height: 512px; */
+  display: flex;
+  border-radius: 32px;
+  /* overflow: hidden; */
+  box-shadow: 0 30px 60px 0 hsla(224, 82%, 58%, 15%);
+}
+
+section.score-card {
+  width: 368px;
+  height: 512px;
+  background: linear-gradient(180deg, var(--light-slate-blue), var(--light-royal-blue) 100%);
+  border-radius: 32px;
+  text-align: center;
+}
+
+.score-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 54px 45px 54px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--light-lavender);
+  margin-top: 45px;
+}
+
+.circle-box {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, var(--violet-blue), var(--persian-blue) 100%);
+  border-radius: 50%;
+  margin: 32px;
+}
+
+.circle-header {
+  color: var(--white);
+  font-size: 4.5rem;
+  margin-top: 52.4px;
+  margin: 0;
+}
+
+.circle-text {
+  color: hsla(241, 100%, 89%, 52%);
+  font-size: 1.25rem;
+}
+
+h3 {
+  font-size: 2rem;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+.results-comp {
+  font-size: 1.125rem;
+  color: var(--light-lavender);
+  /* text-align: center; */
+}
+
+.summary-card {
+  max-width: 368px;
 }
 
 .attribution {
