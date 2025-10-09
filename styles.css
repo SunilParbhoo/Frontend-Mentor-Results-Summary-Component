@@ -126,6 +126,7 @@ h3 {
 
 .summary-card {
   width: 368px;
+  height: 512px;
   padding: 44.5px 40px;
 }
 
@@ -156,6 +157,12 @@ h3 {
 .summary-title {
   display: flex;
   align-items: center;
+  /* width: 100px; */
+}
+
+.summary-title > img {
+  display: inline-block;
+  margin: 0 4px;
 }
 
 .category {
