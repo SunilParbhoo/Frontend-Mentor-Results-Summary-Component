@@ -18,7 +18,7 @@
       <article class="results-container">
         <section class="score-card">
           <div class="score-card-content">
-            <h1>Your Result</h1>
+            <h1 class="score-card-title">Your Result</h1>
             <div class="circle-box">
               <h2 class="circle-header">76</h2>
               <p class="circle-text">of 100</p>
@@ -28,33 +28,41 @@
           </div>
         </section>
         <section class="summary-card">
-          <h2>Summary</h2>
+          <h2 class="summary-card-title">Summary</h2>
 
-          <article>
-            <img src="assets/images/icon-reaction.svg" alt="reaction" />
-            <h4>Reaction</h4>
-            <p><span>80</span> / 100</p>
+          <article class="summary-bubble reaction">
+            <div class="summary-title">
+              <img src="assets/images/icon-reaction.svg" alt="reaction" />
+              <h4 class="category">Reaction</h4>
+            </div>
+            <p class="score"><span class="numerator">80</span> / 100</p>
           </article>
 
-          <article>
-            <img src="assets/images/icon-memory.svg" alt="memory" />
-            <h4>Memory</h4>
-            <p><span>92</span> / 100</p>
+          <article class="summary-bubble memory">
+            <div class="summary-title">
+              <img src="assets/images/icon-memory.svg" alt="memory" />
+              <h4 class="category">Memory</h4>
+            </div>
+            <p class="score"><span class="numerator">92</span> / 100</p>
           </article>
 
-          <article>
-            <img src="assets/images/icon-verbal.svg" alt="verbal" />
-            <h4>Verbal</h4>
-            <p><span>61</span> / 100</p>
+          <article class="summary-bubble verbal">
+            <div class="summary-title">
+              <img src="assets/images/icon-verbal.svg" alt="verbal" />
+              <h4 class="category">Verbal</h4>
+            </div>
+            <p class="score"><span class="numerator">61</span> / 100</p>
           </article>
 
-          <article>
-            <img src="assets/images/icon-visual.svg" alt="visual" />
-            <h4>Visual</h4>
-            <p><span>73</span> / 100</p>
+          <article class="summary-bubble visual">
+            <div class="summary-title">
+              <img src="assets/images/icon-visual.svg" alt="visual" />
+              <h4 class="category">Visual</h4>
+            </div>
+            <p class="score"><span class="numerator">73</span> / 100</p>
           </article>
 
-          <a href="#">Continue</a>
+          <a href="#" class="continue-btn">Continue</a>
         </section>
       </article>
     </main>
